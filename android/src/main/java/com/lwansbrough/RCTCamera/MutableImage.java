@@ -39,7 +39,7 @@ public class MutableImage {
     public void mirrorImage() throws ImageMutationFailedException {
         Matrix m = new Matrix();
 
-        m.preScale(-1, 1);
+        m.preScale(1, -1);
 
         Bitmap bitmap = Bitmap.createBitmap(
                 currentRepresentation,
